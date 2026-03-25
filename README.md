@@ -1,68 +1,48 @@
-# BlackRoad API Analytics
+<!-- BlackRoad SEO Enhanced -->
 
-Real-time analytics dashboard for all BlackRoad APIs.
+# ulackroad analytics
 
-## Live
+> Part of **[BlackRoad OS](https://blackroad.io)** — Sovereign Computing for Everyone
 
-- **Dashboard**: https://blackroad-analytics.amundsonalexa.workers.dev
-- **Metrics API**: https://blackroad-analytics.amundsonalexa.workers.dev/api/metrics
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad-OS-ff1d6c?style=for-the-badge)](https://blackroad.io)
+[![BlackRoad OS](https://img.shields.io/badge/Org-BlackRoad-OS-2979ff?style=for-the-badge)](https://github.com/BlackRoad-OS)
+[![License](https://img.shields.io/badge/License-Proprietary-f5a623?style=for-the-badge)](LICENSE)
 
-## Features
+**ulackroad analytics** is part of the **BlackRoad OS** ecosystem — a sovereign, distributed operating system built on edge computing, local AI, and mesh networking by **BlackRoad OS, Inc.**
 
-- **Real-time Metrics** - Live request counts, latency, error rates
-- **24-hour Charts** - Visual request trends
-- **Service Health** - Per-service status and performance
-- **Top Endpoints** - Most frequently called APIs
-- **Error Breakdown** - Error codes by frequency
-- **Regional Stats** - Performance by geography
-- **Auto-refresh** - Updates every 30 seconds
+## About BlackRoad OS
 
-## Metrics
+BlackRoad OS is a sovereign computing platform that runs AI locally on your own hardware. No cloud dependencies. No API keys. No surveillance. Built by [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc), a Delaware C-Corp founded in 2025.
 
-| Metric | Description |
-|--------|-------------|
-| Total Requests | All-time request count |
-| Today | Requests in last 24h |
-| Avg Latency | Mean response time |
-| Error Rate | Percentage of errors |
-| Uptime | Service availability |
+### Key Features
+- **Local AI** — Run LLMs on Raspberry Pi, Hailo-8, and commodity hardware
+- **Mesh Networking** — WireGuard VPN, NATS pub/sub, peer-to-peer communication
+- **Edge Computing** — 52 TOPS of AI acceleration across a Pi fleet
+- **Self-Hosted Everything** — Git, DNS, storage, CI/CD, chat — all sovereign
+- **Zero Cloud Dependencies** — Your data stays on your hardware
 
-## API
+### The BlackRoad Ecosystem
+| Organization | Focus |
+|---|---|
+| [BlackRoad OS](https://github.com/BlackRoad-OS) | Core platform and applications |
+| [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc) | Corporate and enterprise |
+| [BlackRoad AI](https://github.com/BlackRoad-AI) | Artificial intelligence and ML |
+| [BlackRoad Hardware](https://github.com/BlackRoad-Hardware) | Edge hardware and IoT |
+| [BlackRoad Security](https://github.com/BlackRoad-Security) | Cybersecurity and auditing |
+| [BlackRoad Quantum](https://github.com/BlackRoad-Quantum) | Quantum computing research |
+| [BlackRoad Agents](https://github.com/BlackRoad-Agents) | Autonomous AI agents |
+| [BlackRoad Network](https://github.com/BlackRoad-Network) | Mesh and distributed networking |
+| [BlackRoad Education](https://github.com/BlackRoad-Education) | Learning and tutoring platforms |
+| [BlackRoad Labs](https://github.com/BlackRoad-Labs) | Research and experiments |
+| [BlackRoad Cloud](https://github.com/BlackRoad-Cloud) | Self-hosted cloud infrastructure |
+| [BlackRoad Forge](https://github.com/BlackRoad-Forge) | Developer tools and utilities |
 
-### GET /api/metrics
+### Links
+- **Website**: [blackroad.io](https://blackroad.io)
+- **Documentation**: [docs.blackroad.io](https://docs.blackroad.io)
+- **Chat**: [chat.blackroad.io](https://chat.blackroad.io)
+- **Search**: [search.blackroad.io](https://search.blackroad.io)
 
-Returns all analytics data:
+---
 
-```json
-{
-  "summary": {
-    "totalRequests": 1248429,
-    "requestsToday": 34650,
-    "avgLatency": 51,
-    "errorRate": "0.17",
-    "uptime": 99.97
-  },
-  "services": [...],
-  "timeseries": [...],
-  "topEndpoints": [...],
-  "errorBreakdown": [...],
-  "regions": [...],
-  "lastUpdated": "2026-02-15T05:00:00.000Z"
-}
-```
 
-### GET /api/health
-
-Health check endpoint.
-
-## Development
-
-```bash
-npm install
-npm run dev      # Local development
-npm run deploy   # Deploy to Cloudflare
-```
-
-## License
-
-Proprietary - BlackRoad OS, Inc.
